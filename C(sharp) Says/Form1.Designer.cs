@@ -28,90 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Green = new System.Windows.Forms.Button();
+            this.Red = new System.Windows.Forms.Button();
+            this.Blue = new System.Windows.Forms.Button();
+            this.Yellow = new System.Windows.Forms.Button();
+            this.ScoreLabel = new System.Windows.Forms.Label();
+            this.PatternLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // Green
             // 
-            this.button1.Location = new System.Drawing.Point(141, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 144);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Green.Location = new System.Drawing.Point(20, 41);
+            this.Green.Name = "Green";
+            this.Green.Size = new System.Drawing.Size(205, 115);
+            this.Green.TabIndex = 0;
+            this.Green.Text = "Green";
+            this.Green.UseVisualStyleBackColor = true;
+            this.Green.Click += new System.EventHandler(this.Green_Click);
             // 
-            // button2
+            // Red
             // 
-            this.button2.Location = new System.Drawing.Point(402, 40);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 144);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Red.Location = new System.Drawing.Point(258, 41);
+            this.Red.Name = "Red";
+            this.Red.Size = new System.Drawing.Size(205, 115);
+            this.Red.TabIndex = 1;
+            this.Red.Text = "Red";
+            this.Red.UseVisualStyleBackColor = true;
+            this.Red.Click += new System.EventHandler(this.Red_Click);
             // 
-            // button3
+            // Blue
             // 
-            this.button3.Location = new System.Drawing.Point(141, 236);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(154, 144);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Blue.Location = new System.Drawing.Point(258, 191);
+            this.Blue.Name = "Blue";
+            this.Blue.Size = new System.Drawing.Size(205, 115);
+            this.Blue.TabIndex = 3;
+            this.Blue.Text = "Blue";
+            this.Blue.UseVisualStyleBackColor = true;
+            this.Blue.Click += new System.EventHandler(this.Blue_Click);
             // 
-            // button4
+            // Yellow
             // 
-            this.button4.Location = new System.Drawing.Point(402, 236);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(154, 144);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Yellow.Location = new System.Drawing.Point(20, 191);
+            this.Yellow.Name = "Yellow";
+            this.Yellow.Size = new System.Drawing.Size(205, 115);
+            this.Yellow.TabIndex = 2;
+            this.Yellow.Text = "Yellow";
+            this.Yellow.UseVisualStyleBackColor = true;
+            this.Yellow.Click += new System.EventHandler(this.Yellow_Click);
             // 
-            // button5
+            // ScoreLabel
             // 
-            this.button5.Location = new System.Drawing.Point(643, 190);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(131, 48);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Start";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.ScoreLabel.AutoSize = true;
+            this.ScoreLabel.Location = new System.Drawing.Point(22, 358);
+            this.ScoreLabel.Name = "ScoreLabel";
+            this.ScoreLabel.Size = new System.Drawing.Size(61, 17);
+            this.ScoreLabel.TabIndex = 4;
+            this.ScoreLabel.Text = "Score: 0";
+            // 
+            // PatternLabel
+            // 
+            this.PatternLabel.AutoSize = true;
+            this.PatternLabel.Location = new System.Drawing.Point(255, 358);
+            this.PatternLabel.Name = "PatternLabel";
+            this.PatternLabel.Size = new System.Drawing.Size(118, 17);
+            this.PatternLabel.TabIndex = 5;
+            this.PatternLabel.Text = "Pattern Length: 0";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(480, 402);
+            this.Controls.Add(this.PatternLabel);
+            this.Controls.Add(this.ScoreLabel);
+            this.Controls.Add(this.Blue);
+            this.Controls.Add(this.Yellow);
+            this.Controls.Add(this.Red);
+            this.Controls.Add(this.Green);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "C# Says";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Green;
+        private System.Windows.Forms.Button Red;
+        private System.Windows.Forms.Button Blue;
+        private System.Windows.Forms.Button Yellow;
+        private System.Windows.Forms.Label ScoreLabel;
+        private System.Windows.Forms.Label PatternLabel;
     }
 }
 
